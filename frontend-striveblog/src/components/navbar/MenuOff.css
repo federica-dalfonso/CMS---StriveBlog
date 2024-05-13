@@ -1,0 +1,45 @@
+.burger-style {
+    border:  solid thin #000;
+    border-radius: 0%;
+    background-color: white;
+    color: #000;
+}
+
+.btn-style::after, .btn-style::before {
+    display: none !important;
+}
+.burger-style:hover {
+    background-color: #000 !important;
+    color: white;
+    border:  solid thin #000;
+}
+
+.borders-custom {
+    border-left: solid thin #000;
+    border-right: solid thin #000;
+    text-align: center;
+    padding: 0 1em !important;
+}
+
+.justified {
+    text-align: justify;
+    padding-right: 0.8em;
+}
+
+.bord-bott {
+    border-bottom: solid thin #000;
+}
+
+.li-gr-menu, .li-gr-menu-item {
+    border: none !important;
+    padding-left: 0;
+}
+
+.link-to {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-to:hover {
+    border-bottom: solid thin #000;
+}

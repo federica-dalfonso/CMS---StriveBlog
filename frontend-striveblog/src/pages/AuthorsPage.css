@@ -1,0 +1,18 @@
+.users-picture {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+}
+
+.bottom-style {
+    border-bottom: solid thin #000 !important;
+}
+
+.authenticated-author {
+    background-color: rgba(128, 128, 128, 0.119);
+}
+
+.style-box {
+    border-left: solid thin #000;
+    border-right: solid thin #000;
+}

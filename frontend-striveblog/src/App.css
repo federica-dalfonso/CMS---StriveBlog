@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*JUMBOTRON STYLE*/
+.jumbotron-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.jumbotron-container span:first-of-type {
+    font-weight: 400;
+    font-size: 14pt;
+}
+.jumbotron-container span:nth-of-type(2) {
+    font-weight: 700;
+    font-size: 58pt;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}  
+
+::-webkit-scrollbar-thumb {
+background: #B5C0D0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8e96a3;
+    cursor: default;
+}
+
+/*LOADER CARICAMENTO DATI*/
+.loader-spinn {
+    width: 50px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+  }
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+/*ALERT OK*/
+
+/*ALERT ERRORE*/

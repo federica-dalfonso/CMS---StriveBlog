@@ -1,0 +1,92 @@
+/*modale password*/
+.modal-content {
+    border-radius: unset !important;
+}
+.psw-form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.psw-form-style input {
+    font-style: oblique;
+}
+.psw-btn, .btn-collapsed-add {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.5em;
+}
+
+/*header backoffice*/
+.modal-backdrop.show {
+    opacity: 0.9;
+    background: rgb(57, 56, 56);
+}
+
+.link-box-style, .add-box-style {
+    border-top: solid thin #000;
+    border-bottom: solid thin #000;
+}
+
+.link-box-style a {
+    border-left: solid thin #000;
+    border-right: solid thin #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.link-box-style img {
+    cursor: pointer;
+    width: 2.3em;
+    height: 2.3em; 
+    padding: 0.2em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid thin #000;
+}
+
+/*ADD Article*/
+#collapse-area label {
+    font-size: 10pt;
+}
+
+/*LIST Article*/
+.btn-crud button {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    color: white;
+    border: none;
+}
+
+/*MODALE DI MODIFICA*/
+@media (min-width: 576px) {
+    .modal-dialog#modify-modal {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.preview-article-img-size {
+    width: 9em;
+    height: 5em;
+    object-fit: cover;
+}
+.preview-author-img-size {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+}
+
+.textarea-modify-modal {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+/*SEZIONE MODIFICA INFO AUTORE*/
+.btn-modify-author {
+    border-radius: 0%;
+    margin: 0.5em 0;
+}
+
