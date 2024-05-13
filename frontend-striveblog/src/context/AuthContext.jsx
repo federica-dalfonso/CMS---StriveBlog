@@ -15,7 +15,7 @@ export default function AuthContextProvider ({children}) {
         setAuthenticated(token !== "");
     }, [token]);
 
-    const value = {token, setToken, authorId, setAuthorId, authenticated};
+    const value = {token, setToken, authorId, setAuthorId, authenticated, setAuthenticated};
 
     return (<AuthContext.Provider value={value}>{children}</AuthContext.Provider>)
 }

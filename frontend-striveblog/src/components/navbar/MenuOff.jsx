@@ -60,6 +60,7 @@ export default function MenuOff () {
     const handleLogOut = (e) => {
         setToken("");
         setAuthorId("");
+        setAuthenticated(false);
         localStorage.removeItem("token");
         localStorage.removeItem("authorId");
         toLoginPageAgain("/");

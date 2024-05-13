@@ -14,7 +14,6 @@ export default function AuthorsPage () {
 
     //recupero token e IDAutore
     const {token, authorId} = useContext(AuthContext);
-    console.log(authorId)
 
     const getAuthors = async () => {
         try {

@@ -3,8 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SlTrash } from "react-icons/sl";
 
-
-export default function DeleteAuthor() {
+export default function DeleteAuthor({deleteFunction}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,13 +11,14 @@ export default function DeleteAuthor() {
 
 
   const handleDelete = (e) => {
-    
+    e.preventDefault();
+    deleteFunction();
   }
  
   return (
     <>
       <Button className='rounded-0 d-flex align-items-center gap-2' variant="danger" onClick={handleShow}>
-            Elimina <SlTrash />
+        Elimina <SlTrash />
       </Button>
 
       <Modal
@@ -38,9 +38,9 @@ export default function DeleteAuthor() {
 
         <Modal.Footer>
             <Button variant="secondary" className='btn-crud rounded-0' onClick={handleClose}>
-                Annulla
+              Annulla
             </Button>
-            <Button variant="success" className='btn-crud rounded-0'>Confermo</Button>
+            <Button variant="success" className='btn-crud rounded-0' onClick={handleDelete}>Confermo</Button>
         </Modal.Footer>
 
       </Modal>
